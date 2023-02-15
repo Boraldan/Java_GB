@@ -1,24 +1,22 @@
-package Lec_1;
+package Lecsii;
 
 import java.net.SocketPermission;
 import java.util.Scanner;
 
-public class program {
+public class L1 {
 
     public static void main(String[] args) {
 
-        System.out.println(); 
+        System.out.println();
         float e = 2.7f;
         double pi = 3.1415;
         System.out.println(e); // 2.7
-        System.out.println(pi); 
+        System.out.println(pi);
 
         char ch = '1';
         System.out.println(Character.isDigit(ch)); // true
         ch = 'a';
         System.out.println(Character.isDigit(ch)); // false
-
-        
 
         boolean flag1 = 123 <= 234;
         System.out.println(flag1); // true
@@ -27,7 +25,7 @@ public class program {
         boolean flag3 = flag1 ^ flag2;
         System.out.println(flag3); // fals
 
-        String msg ="Hello world";
+        String msg = "Hello world";
         System.out.println(msg); // Hello worl
 
         var a = 123;
@@ -38,9 +36,9 @@ public class program {
         System.out.println(getType(d)); // Double
         d = 1022;
         System.out.println(d); // 1022
-        //d = "mistake";
-        //error: incompatible types:
-        //String cannot be converted to double
+        // d = "mistake";
+        // error: incompatible types:
+        // String cannot be converted to double
 
         System.out.println(Integer.MAX_VALUE); // 2147483647
         System.out.println(Integer.MIN_VALUE); // -214748364
@@ -55,13 +53,14 @@ public class program {
         System.out.println(a);
         System.out.println(b);
 
-        /* Операции Java
-        ● Присваивание: =
-        ● Арифметические: *, /, +, -, %, ++, --
-        ● Операции сравнения: <, >, ==, !=, >=, <=
-        ● Логические операции: ||, &&, ^, !
-        ● Побитовые операции <<, >>, &, |, ^
-        */
+        /*
+         * Операции Java
+         * ● Присваивание: =
+         * ● Арифметические: *, /, +, -, %, ++, --
+         * ● Операции сравнения: <, >, ==, !=, >=, <=
+         * ● Логические операции: ||, &&, ^, !
+         * ● Побитовые операции <<, >>, &, |, ^
+         */
 
         int[] arr = new int[10];
         System.out.println(arr.length); // 10
@@ -71,18 +70,21 @@ public class program {
         int[] arr2[] = new int[3][5];
         for (int[] line : arr2) {
             for (int item : line) {
-            System.out.printf("%d ", item);
-        }
-        System.out.println();
+                System.out.printf("%d ", item);
+            }
+            System.out.println();
         }
 
-        int i = 123; double d2 = i;
+        int i = 123;
+        double d2 = i;
         System.out.println(i); // 123
         System.out.println(d2); // 123.0
-        d2 = 3.1415; i = (int)d2;
+        d2 = 3.1415;
+        i = (int) d2;
         System.out.println(d2); // 3.1415
         System.out.println(i); // 3
-        d2 = 3.9415; i = (int)d2;
+        d2 = 3.9415;
+        i = (int) d2;
         System.out.println(d2); // 3.9415
         System.out.println(i); // 3
         byte b2 = Byte.parseByte("123");
@@ -97,14 +99,12 @@ public class program {
         System.out.printf("Привет, %s!", name);
         // iScanner.close();
 
-        
         System.out.printf("int a: ");
         int x = iScanner.nextInt();
         System.out.printf("double a: ");
         double y = iScanner.nextDouble();
         System.out.printf("%d + %f = %f", x, y, x + y);
         // iScanner.close();
-
 
         // Проверка на соответствие получаемого типа --------------
         System.out.printf("int a: ");
@@ -126,15 +126,16 @@ public class program {
         System.out.printf("%d + %d = %d \n", a4, b4, c4);
         System.out.println(res4);
 
-        /*   Виды спецификаторов  ------------------------
-        %d: целочисленных значений
-        %x: для вывода шестнадцатеричных чисел
-        %f: для вывода чисел с плавающей точкой
-        %e: для вывода чисел в экспоненциальной форме,
-        например, 3.1415e+01
-        %c: для вывода одиночного символа
-        %s: для вывода строковых значений
-        */
+        /*
+         * Виды спецификаторов ------------------------
+         * %d: целочисленных значений
+         * %x: для вывода шестнадцатеричных чисел
+         * %f: для вывода чисел с плавающей точкой
+         * %e: для вывода чисел в экспоненциальной форме,
+         * например, 3.1415e+01
+         * %c: для вывода одиночного символа
+         * %s: для вывода строковых значений
+         */
 
         float pi2 = 3.1415f;
         System.out.printf("%f\n", pi2); // 3,141500
@@ -144,22 +145,20 @@ public class program {
         System.out.printf("%.2e\n", pi2); // 3,14e+00
         System.out.printf("%.3e\n", pi2); // 3,141e+00
 
-
-        // Функции и методы  ------------
+        // Функции и методы ------------
         sayHi(); // hi!
         System.out.println(sum(1, 3)); // 4
         System.out.println(factor(5)); // 120.0
-        
+
         // Управляющие конструкции:
-        // условный оператор  -----------------
+        // условный оператор -----------------
         int a5 = 1;
         int b5 = 2;
         int c5;
         if (a5 > b5) {
-        c5 = a5;
-        } 
-        else {
-        c5 = b5;
+            c5 = a5;
+        } else {
+            c5 = b5;
         }
         System.out.println(c5);
 
@@ -173,57 +172,51 @@ public class program {
         int value = 321;
         int count = 0;
         while (value != 0) {
-        value /= 10;
-        count++;
+            value /= 10;
+            count++;
         }
         System.out.println(count);
 
         do {
             value /= 10;
             count++;
-            } while (value != 0);
-            System.out.println(count);
-        
-        
+        } while (value != 0);
+        System.out.println(count);
+
         for (int k = 0; k < 5; k++) {
             for (int j = 0; j < 5; j++) {
-            System.out.print("* ");
+                System.out.print("* ");
             }
             System.out.println();
-            }
+        }
 
-        // Перебор цикла   -------------
+        // Перебор цикла -------------
         int arr3[] = new int[10];
-            for (int item : arr3)  //  перебор цикла
-            {
+        for (int item : arr3) // перебор цикла
+        {
             System.out.printf("%d ", item);
-            }
-            System.out.println();
-
-
         }
+        System.out.println();
 
+    }
 
-        static String getType(Object o){
-            return o.getClass().getSimpleName();
-        }
+    static String getType(Object o) {
+        return o.getClass().getSimpleName();
+    }
 
+    // Функции и методы ------------
+    static void sayHi() {
+        System.out.println("hi!");
+    }
 
-        // Функции и методы  ------------
-        static void sayHi() {
-            System.out.println("hi!");
-            }
+    static int sum(int a, int b) {
+        return a + b;
+    }
 
-        static int sum(int a, int b) {
-            return a+b;
-            }
-            
-        static double factor(int n) {
-            if(n==1)return 1;
-            return n * factor(n-1);
-        }
+    static double factor(int n) {
+        if (n == 1)
+            return 1;
+        return n * factor(n - 1);
+    }
 
-    
-
-    
 }

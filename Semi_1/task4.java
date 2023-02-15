@@ -33,5 +33,5 @@ public class task4 {
         return res;
 
     }
-
+ 
 }

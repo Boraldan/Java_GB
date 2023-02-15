@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class task2 {
 
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         System.out.println("Введите число num1: ");
@@ -21,7 +21,7 @@ public class task2 {
 
             int num2 = scan.nextInt();
             if (num1 > 0 && num2 < 0) {
-                count ++;
+                count++;
 
             }
             num1 = num2;
