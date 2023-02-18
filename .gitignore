@@ -1,4 +1,4 @@
-_TEMP
-_test
-.config
-.vscode
+_TEMP/
+_test/
+.config/
+.vscode/
