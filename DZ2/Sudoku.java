@@ -11,8 +11,10 @@ package DZ2;
         •	board[i][j] значение число или '.'
 */
 
-public class task4 {
+public class Sudoku {
    public static void main(String[] args) {
+
+      var s = System.currentTimeMillis();
       char[][] board = {
             { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
             { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
@@ -27,6 +29,7 @@ public class task4 {
       // System.out.println("Validete:" + isValidSudoku(board));
 
       char[] chArr = new char[9];
+      char[] colArr = new char[9];
       boolean flag = true;
 
       for (int k = 0; k < 9; k += 3) {
@@ -52,23 +55,15 @@ public class task4 {
             int iCh = 0;
             for (int j = 0; j < 9; j++) {
                chArr[iCh] = board[i][j];
+               colArr[iCh] = board[j][i];
                iCh++;
             }
             flag = Check(chArr);
             if (flag == false) {
                break;
             }
-         }
-      }
 
-      if (flag) {
-         for (int i = 0; i < 9; i++) {
-            int iCh = 0;
-            for (int j = 0; j < 9; j++) {
-               chArr[iCh] = board[j][i];
-               iCh++;
-            }
-            flag = Check(chArr);
+            flag = Check(colArr);
             if (flag == false) {
                break;
             }
@@ -77,6 +72,8 @@ public class task4 {
 
       if (flag)
          System.out.println("Поле заполнено верно!");
+         
+      System.out.println(System.currentTimeMillis() - s);
    }
 
    public static boolean Check(char[] arr) {

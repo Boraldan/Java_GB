@@ -33,5 +33,7 @@ public class Metod_String {
         int first1 = Integer.parseInt(string);
         int second2 = Integer.valueOf(string);
 
+        
+
     }
 }

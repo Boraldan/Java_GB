@@ -1,21 +1,18 @@
 package _test;
 
+import java.util.*;
 
 
 public class test_1 {
     public static void main(String[] args) {
-    
-        String[] st1 = new String [] {"1", ".", "5"};
-        
-        String str2 = "1";
 
-        if (st1[1] == str2) {
-            System.out.println("да");
-        }
-        else{
-            System.out.println("нет");
-        }
-        
 
-    }
+        String start = "I love you ";
+        String g1 = "go go go";
+
+
+        StringBuilder text = new StringBuilder(start);
+        
+        
+}
 }

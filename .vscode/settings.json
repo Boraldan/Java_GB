@@ -5,5 +5,9 @@
     "editor.fontLigatures": false,
     "editor.mouseWheelZoom": true,
     "editor.formatOnSave": false,
-    "editor.formatOnType": false
+    "editor.formatOnType": false,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\aboro\\Desktop\\_Скачано\\libs\\lombok-1.18.24.jar"
+    ]
 }
