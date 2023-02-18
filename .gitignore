@@ -1,5 +1,5 @@
-_TEMP1/
-_test1/
+_TEMP/
+_test/
 .config/
 .vscode/
 echo "_TEMP" >> .gitignore
