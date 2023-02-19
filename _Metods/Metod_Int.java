@@ -6,7 +6,8 @@ import java.util.stream.Collectors;
 
 public class Metod_Int {
    public static void main(String[] args) {
-      
+      System.out.print("\033\143"); // очистка терминала
+
       // * проверяем длину  числа
       int arr[] = {78, -9, 2345, 89009, 1, 34, 1000, 2749};  
       // число должно быть положительным перед проверкой. варианты:
