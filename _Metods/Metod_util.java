@@ -31,7 +31,7 @@ public class Metod_util {
       String[] wordsArray = wordsList.toArray(new String[0]);
       // Integer [] arr2 = list.toArray(new Integer[0]);
       
-      String[] strings = wordsList.stream()  // функция стрим с дом методами в массив
+      String[] strings = wordsList.stream()  // функция стрим с доп методами в массив
       .filter(str -> str.length() > 2)  // метод фильтрации
       .map(str -> str.toUpperCase())     // преобразования функцией
       .toArray(String[]::new);            // запись в новый массив
