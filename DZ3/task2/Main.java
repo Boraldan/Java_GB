@@ -11,13 +11,14 @@ import java.util.*;
 public class Main {
    public static void main(String[] args) {
 
-      Items item = new Items("air_rus", "rus", 10, 100, 1);
+      Items item = new Items("air_rus", "rus", 7, 100, 1);
       Items item2 = new Items("air_eng", "eng", 15, 210, 2);
       Items item3 = new Items("air_kgz", "kgz", 20, 120, 3);
       Items item4 = new Items("air_eng", "eng", 12, 130, 1);
       Items item5 = new Items("air_rus", "rus", 9, 140, 2);
       Items item6 = new Items("air_jap", "jap", 10, 150, 3);
       Items item7 = new Items("air_ch", "chine", 11, 155, 1);
+      Items item8 = new Items("air_rus", "rus", 9, 120, 1);
 
       List<Items> arrIt = new ArrayList<>();
       arrIt.add(item);
@@ -27,6 +28,7 @@ public class Main {
       arrIt.add(item5);
       arrIt.add(item6);
       arrIt.add(item7);
+      arrIt.add(item8);
 
       HashSet tempL = new HashSet<>();
       for (Items el : arrIt) {
@@ -35,13 +37,16 @@ public class Main {
       for (Object el : tempL) {
          System.out.printf("Товар:  " + el + "\n");
       }
-
+   System.out.println(arrIt);
+   
       System.out.println("Веберите сорт товара от 1 до 3: ");
       Scanner scan = new Scanner(System.in);
       int find = scan.nextInt();
       Integer costTemp = null;
       Items good = null;
       boolean flag = false;
+
+   
 
       for (Items el : arrIt) {
          if (flag == false && el.getQual() == find) {

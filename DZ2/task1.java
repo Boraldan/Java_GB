@@ -9,7 +9,7 @@ public class task1 {
    public static void main(String[] args) {
 
       int sum = 0;
-      int[] myArr = { 1, 2, 3, 6, 7, 8, 10001, 100, 109 };
+      int[] myArr = { 1, 2, 3, 6, 7, 8, 9 };
       for (int i = 0; i < myArr.length; i++) {
          if (myArr[i] == 2 || myArr[i] == 3) {
             sum += myArr[i];
