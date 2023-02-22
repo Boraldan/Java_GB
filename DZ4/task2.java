@@ -7,8 +7,9 @@ public class task2 {
    public static void main(String[] args) {
 
       String myStr = "({)[]}()";
+      String myStr2 = "()[]{}(()";
 
-      String[] arrStr = myStr.split("");
+      String[] arrStr = myStr2.split("");
       LinkedList<String> myLiOld = new LinkedList<>();
 
       for (String el : arrStr) {
@@ -39,6 +40,7 @@ public class task2 {
                   i--;
                   break;
                }
+               count++;
             }
          } else if (myLi.get(i).equals("[")) {
             int count = 0;
@@ -49,6 +51,7 @@ public class task2 {
                   i--;
                   break;
                }
+               count++;
             }
          }
       }
