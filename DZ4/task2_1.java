@@ -2,14 +2,13 @@ package DZ4;
 
 import java.util.LinkedList;
 
-/**
- * task2_1
- */
+// Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+//  determine if the input string is valid.
 public class task2_1 {
 
    public static void main(String[] args) {
-      String myStr = "{({})[]}{(})";
-      String myStr2 = "()[]{}()";
+      // String myStr = "{({})[]}{(})";
+      String myStr = "()[]{}()";
 
       LinkedList<Character> myLiOld = new LinkedList<>();
 
@@ -21,11 +20,8 @@ public class task2_1 {
    }
 
    public static boolean CheckEmpty(LinkedList myLi) {
-      int n = myLi.size();
-
-      if (n < 1 || n % 2 != 0)
+      if (myLi.size() < 1 || myLi.size() % 2 != 0)
          return false;
-
       for (int i = 1; i < myLi.size(); i++) {
          if (i - 1 >= 0 && myLi.get(i).equals(')') && myLi.get(i - 1).equals('(')) {
             myLi.remove(i);

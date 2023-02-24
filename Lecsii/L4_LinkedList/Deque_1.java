@@ -1,4 +1,4 @@
-package Lecsii.L4;
+package Lecsii.L4_LinkedList;
 
 import java.util.*;
 
