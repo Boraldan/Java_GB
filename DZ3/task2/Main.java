@@ -30,23 +30,20 @@ public class Main {
       arrIt.add(item7);
       arrIt.add(item8);
 
-      HashSet tempL = new HashSet<>();
+      Set <String> tempL = new HashSet<>();
       for (Items el : arrIt) {
          tempL.add(el.getName());
       }
-      for (Object el : tempL) {
+      for (String el : tempL) {
          System.out.printf("Товар:  " + el + "\n");
       }
-   System.out.println(arrIt);
-   
+
       System.out.println("Веберите сорт товара от 1 до 3: ");
       Scanner scan = new Scanner(System.in);
       int find = scan.nextInt();
       Integer costTemp = null;
       Items good = null;
       boolean flag = false;
-
-   
 
       for (Items el : arrIt) {
          if (flag == false && el.getQual() == find) {

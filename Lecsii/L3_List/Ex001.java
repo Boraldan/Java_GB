@@ -1,4 +1,4 @@
-package Lecsii.L3;
+package Lecsii.L3_List;
 
 public class Ex001 {
     static int[] AddItemInArray(int[] array, int item) {

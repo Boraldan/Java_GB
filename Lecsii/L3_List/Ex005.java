@@ -1,4 +1,4 @@
-package Lecsii.L3;
+package Lecsii.L3_List;
 
 import java.util.Arrays;
 import java.util.List;
